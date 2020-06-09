@@ -1,9 +1,8 @@
-<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 <template>
     <form v-on:submit.prevent="onSubmit">
-        <label for="username">Username</label>
+        <label for="username">Username:</label>
         <input type="email" class="input" name="username" id="username" v-model="input.email">
-        <label for="password">Password</label>
+        <label for="password">Password:</label>
         <input type="password" class="input" name="password" id="password" v-model="input.password">
         <p id="error" class="shake">Incorrect email or password. Please try again</p>
         <input type="submit" value="Log In">
